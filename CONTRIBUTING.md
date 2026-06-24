@@ -21,12 +21,13 @@ deps and confirm tests pass.
 | `hotfix/*` | Urgent fixes — branched from `main`. |
 
 ## Workflow
+0. **Open or confirm a tracking Issue** — the written record of what's agreed. Use a checklist in the body for multi-PR work.
 1. `git switch develop && git pull`
 2. `git switch -c feature/short-description`
 3. Commit (Conventional Commits; the Inspector runs automatically).
 4. `git push -u origin feature/short-description`
-5. Open a PR **into `develop`** — `gh pr create --base develop`.
-6. Green CI + review → merge.
+5. Open a PR **into `develop`** (`gh pr create --base develop`) and **link the issue** in the description — `Part of #N`, or `Closes #N` for the PR that completes the work.
+6. Green CI + review → merge (a `Closes #N` auto-closes the issue).
 
 ## Quality gates (enforced, not optional)
 The Inspector and CI run: **lint · type-check (hard) · tests · secret scan.** Do not bypass

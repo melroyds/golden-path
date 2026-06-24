@@ -11,3 +11,4 @@ versioning: [SemVer](https://semver.org/).
 
 ### Added
 - Initial golden-path scaffold (Inspector, tiered CI, playbook, doc tiers).
+- "Agreed work → tracking issue → PRs link back" traceability pattern, woven through PLAYBOOK §9, CONTRIBUTING, and the PR template.

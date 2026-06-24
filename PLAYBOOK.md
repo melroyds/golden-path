@@ -120,6 +120,22 @@ Don't conflate them.
 - **Branch model when it's not just you** `[2]`: `feature/*` off `develop`, PR into `develop`,
   never push `main` directly. Solo, a single `main` is fine.
 
+## 9. Make agreed work leave a paper trail `[1→2]`
+
+A verbal "yes, build it" isn't a record. Turn it into one — and wire it into the workflow so
+the record and the work stay linked.
+
+- **An Issue is the agreed-work record; a PR is the work.** Before you branch, open (or
+  confirm) a tracking Issue describing what was agreed and why. `[1]`
+- **Make it a tracking issue** — put the work as a **checklist** in the body. Stakeholders
+  see the agreement; the boxes tick off as you ship. `[1]`
+- **Link every PR back to it** — `Part of #N` for step PRs, `Closes #N` for the one that
+  finishes the work. GitHub auto-links and auto-closes, so the record maintains itself. `[2]`
+- **Name the branch for the work** (e.g. `feature/wheelchair-designs`). `[1]`
+
+The chain: **Issue → branch → PR (`Closes #N`) → merge → CHANGELOG.** No agreed work happens
+off the books.
+
 ---
 
 ## The Day-0 checklist
@@ -137,6 +153,7 @@ Don't conflate them.
 [1] Coverage gate on · multi-stage CI (build/security) · rollback playbook in CLAUDE.md
 [1] Feedback channel shipped BEFORE you announce
 [1] Pre-launch smoke test on the real prod URL, real device, incognito
+[1] Agreed work starts as a tracking Issue; every PR links back (Part of #N / Closes #N)
 [2] develop/feature branches · CONTRIBUTING · PR template · CHANGELOG · SECURITY.md
 ```
 

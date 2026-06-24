@@ -1,6 +1,9 @@
 ## Summary
 <!-- What changed, and why? -->
 
+## Linked issue
+<!-- "Part of #__"  ·  or "Closes #__" for the PR that completes the agreed work -->
+
 ## Type
 - [ ] Feature
 - [ ] Fix
@@ -8,6 +11,7 @@
 - [ ] Docs
 
 ## Checklist
+- [ ] Linked to its tracking issue (`Part of #__` / `Closes #__`)
 - [ ] Branched from `develop` (or `main` for a hotfix)
 - [ ] Gates pass locally (lint · type-check · tests · secret scan)
 - [ ] Test added/updated for any new risk surface
