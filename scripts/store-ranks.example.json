@@ -1,0 +1,10 @@
+{
+  "_comment": "Copy to your repo root as store-ranks.json. apple_id is the number in your App Store URL (id1234567890). Keep the searches the same between runs, and use each storefront's own language for its terms.",
+  "apple_id": "1234567890",
+  "doc": "docs/store-search-ranks.md",
+  "storefronts": [
+    { "country": "au", "terms": ["your app name", "the category words in your name", "your audience plus the category", "the plain category", "a keyword-field word"] },
+    { "country": "us", "terms": ["your app name", "the category words in your name", "your audience plus the category", "the plain category", "a keyword-field word"] },
+    { "country": "de", "terms": ["your app name", "the German category words in your German name"] }
+  ]
+}

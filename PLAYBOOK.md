@@ -138,6 +138,27 @@ off the books.
 
 ---
 
+## 10. Going to market: get found, trusted and heard `[0→2]`
+
+Shipping is not the same as being found. The whole of this lives in [GROWTH.md](GROWTH.md), whose tags mark a
+go-to-market stage rather than team size. The spine of it:
+
+- **Proof before promotion.** A landing page search can read (real HTML at the root, even for an SPA), and store
+  listings that stay true, before you ask anyone to look. `[0→1]`
+- **The store page is a contract, kept in the repo and gated like code.** One source file per field, a CI gate that
+  fails on prices, platform-wrong features, store-banned wording and claims the code disproves, and pastes printed
+  from that file, never retyped. `[1]`
+- **Measure before you move.** An App Store search-rank baseline the day a listing changes
+  ([`scripts/store-ranks.py`](scripts/store-ranks.py)), reruns at about one and four weeks, Play's own search-term
+  report, and store badges tagged by channel so installs can be traced. `[1]`
+- **Ratings come only from the store's own card, earned by use and asked at a calm moment.** Never reward a rating,
+  never fake social proof. `[0→1]`
+- **Thank people for feedback, never pay for praise.** Gift on your server for every platform, show the offer only to
+  people who can get it, and give every note the same reply whether it passed the spam check or not, with a visible
+  minimum on Send so that only spam ever fails. A reviewed design, not yet through store review. `[2]`
+
+---
+
 ## The Day-0 checklist
 
 ```
@@ -150,10 +171,13 @@ off the books.
 [0] Risk list written: the 5–6 surfaces that hurt users if they break → one test file each
 [0] Budget/cost alarm set before any traffic
 [0] Build-journal Day-1 entry written the same day
+[0] Landing page is real HTML at the root, and privacy, terms and support are static files (GROWTH.md §1)
 [1] Coverage gate on · multi-stage CI (build/security) · rollback playbook in CLAUDE.md
 [1] Feedback channel shipped BEFORE you announce
 [1] Pre-launch smoke test on the real prod URL, real device, incognito
 [1] Agreed work starts as a tracking Issue; every PR links back (Part of #N / Closes #N)
+[1] Store listing gate in CI, and a search-rank baseline the day a listing changes (GROWTH.md §2-3)
+[1] The store's own rating card only, earned by use, and store badges tagged by channel (GROWTH.md §5-6)
 [2] develop/feature branches · CONTRIBUTING · PR template · CHANGELOG · SECURITY.md
 ```
 
@@ -164,5 +188,6 @@ off the books.
 Not rules to follow religiously — a way to **not rediscover what past-me already paid for.**
 Fork it, argue with it, delete the parts that don't fit. Make it yours.
 
-*Distilled from ParkProof + patterns admired in a collaborator's project. Authored fresh;
+*Distilled from ParkProof + patterns admired in a collaborator's project, and the going-to-market
+chapter from DoubleDone, whose store-ranks script is adapted here with its ids removed. Otherwise authored fresh,
 no code copied. MIT.*

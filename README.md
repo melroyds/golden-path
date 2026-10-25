@@ -38,6 +38,8 @@ Start at Tier 0. Graduate a project *up* as it gets real. Same framework, differ
 | File | What it is | Tier |
 |---|---|---|
 | [`PLAYBOOK.md`](PLAYBOOK.md) | The merged playbook — principles, patterns, day-0 checklist | all |
+| [`GROWTH.md`](GROWTH.md) | Going to market: landing page, store listings as code, store search, screenshots, ratings, attribution, positioning, feedback | 0→2 |
+| [`scripts/store-ranks.py`](scripts/store-ranks.py) | App Store search-rank baseline, rerun on a schedule (config: `scripts/store-ranks.example.json`) | 1 |
 | [`.githooks/pre-commit`](.githooks/pre-commit) | The **Inspector** — local gate (lint · type-check · tests · secret scan) | 0 |
 | [`.github/workflows/ci.yml`](.github/workflows/ci.yml) | Tiered CI — the cloud backstop | 0→1 |
 | [`CLAUDE.md`](CLAUDE.md) | Engineering-notes template (incl. a rollback playbook) | all |
@@ -49,6 +51,7 @@ Start at Tier 0. Graduate a project *up* as it gets real. Same framework, differ
 ## Provenance
 
 Distilled from my own **ParkProof** build and from patterns I admired in a collaborator's
-project. **No code was copied** from anyone's repo — these are techniques (git hooks,
+project. The going-to-market chapter, [`GROWTH.md`](GROWTH.md), comes from my live app **DoubleDone**, and
+`scripts/store-ranks.py` is adapted from its script with every id removed. **No code was copied** from anyone else's repo. These are techniques (git hooks,
 gitleaks, Conventional Commits, risk-targeted testing, tiered CI) that belong to everyone.
 MIT licensed — make it yours.
